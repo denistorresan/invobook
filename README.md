@@ -53,10 +53,30 @@ Set env variables
 cp .env.example .env
 ```
 
+Install npm
+
+```sh
+npm install
+```
+
 Install composer packages
 
 ```sh
 composer install
+```
+
+Setup Laravel
+
+```sh
+php artisan key:generate
+php artisan migrate --seed
+php artisan icons:cache
+```
+
+Build vite
+
+```sh
+npm run build
 ```
 
 ## Screenshots <small>[↑Top](#about-invobook)</small>
